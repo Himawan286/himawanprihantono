@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Himawan Prihantono</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #575757;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+         /* keahlian */
+         .keahlian {
+            padding: 30px;
+            background-color: #f9f9f9;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .keahlian h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .keahlian p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        .keahlian ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .keahlian li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 4px solid #007bff; /* Color for the left border */
+            transition: background-color 0.3s;
+        }
+
+        .keahlian li:hover {
+            background-color: #e7f3ff; /* Light blue background on hover */
+        }
+
+        .keahlian strong {
+            color: #007bff; /* Color for the skill titles */
+        }
+        /* Media queries for mobile view */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .marquee span {
+                font-size: 14px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .social-icons img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* Style for social media logos */
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="tentang saya.html">Tentang Saya</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tugas Sekolah 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="listnama.html">List Nama Siswa</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Keahlian 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="coding.html">Coding</a>
+                <a href="jaringan.html">Jaringan</a>
+                <a href="3d design.html ">3D Design</a>
+            </div>
+        </div> 
+        <a href="contact.html">Contact</a>
+    </div>
+    
+     <!-- Keahlian -->
+    <div class="keahlian">
+        <h2>Keahlian Saya dalam Jaringan</h2>
+        <p>
+            Sebagai seorang yang memiliki ketertarikan dalam dunia jaringan, saya telah mempelajari dan mengembangkan berbagai keterampilan yang relevan dengan Network Engineering. Di bawah ini adalah beberapa keahlian yang saya kuasai:
+        </p>
+        <ul>
+            <li>
+                <strong>Desain Jaringan:</strong> 
+                Saya mampu merancang infrastruktur jaringan yang efisien dan handal, termasuk pemilihan perangkat keras dan perangkat lunak yang tepat untuk memenuhi kebutuhan organisasi. Saya memahami konsep topologi jaringan dan dapat menentukan desain yang optimal untuk berbagai skenario.
+            </li>
+            <li>
+                <strong>Pengelolaan Jaringan:</strong> 
+                Saya berpengalaman dalam mengelola jaringan dengan menggunakan alat pemantauan yang canggih, seperti Wireshark dan PRTG Network Monitor. Dengan alat ini, saya dapat menganalisis trafik jaringan, mendeteksi masalah, dan melakukan troubleshooting untuk memastikan ketersediaan layanan.
+            </li>
+            <li>
+                <strong>Keamanan Jaringan:</strong> 
+                Memahami pentingnya keamanan dalam jaringan, saya telah mempelajari prinsip-prinsip dasar keamanan siber. Saya mampu mengimplementasikan firewall, sistem deteksi intrusi (IDS), dan solusi VPN untuk melindungi data dan mencegah akses tidak sah.
+            </li>
+            <li>
+                <strong>Protokol Jaringan:</strong> 
+                Saya memiliki pemahaman mendalam tentang berbagai protokol jaringan, termasuk TCP/IP, DHCP, dan DNS. Keahlian ini memungkinkan saya untuk memahami bagaimana data dikirim dan diterima dalam jaringan, serta bagaimana mengkonfigurasi perangkat untuk komunikasi yang efisien.
+            </li>
+            <li>
+                <strong>Pemecahan Masalah Jaringan:</strong> 
+                Keterampilan analitis saya memungkinkan saya untuk dengan cepat mengidentifikasi dan memperbaiki masalah jaringan. Saya memiliki pengalaman dalam melakukan troubleshooting perangkat keras dan perangkat lunak jaringan, serta melakukan pengujian untuk memastikan konektivitas yang optimal.
+            </li>
+            <li>
+                <strong>Pengalaman Praktis:</strong> 
+                Melalui proyek-proyek yang saya lakukan, saya telah mengaplikasikan pengetahuan teoretis ke dalam praktik nyata, seperti membangun dan mengelola lab jaringan. Pengalaman ini memberi saya wawasan yang lebih baik tentang tantangan yang dihadapi dalam lingkungan jaringan.
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Logo media sosial -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png" alt="Twitter Logo">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        </a>
+    </div>
+
+</body>
+</html>

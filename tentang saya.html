@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Himawan Prihantono</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Pastikan Anda memiliki file styles.css -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #575757;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* About Me Section Styling */
+        .about {
+            background-color: #f9f9f9;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center; /* Center text */
+        }
+
+        .about h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        .about ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+
+        .about li {
+            margin-bottom: 10px;
+        }
+
+        /* Image styling */
+        .about img {
+            width: 150px; /* Atur lebar gambar sesuai kebutuhan */
+            height: 150px; /* Atur tinggi gambar sesuai kebutuhan */
+            border-radius: 50%; /* Membuat gambar bulat */
+            margin-bottom: 20px; /* Jarak di bawah gambar */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about {
+                padding: 20px;
+            }
+
+            .about h2 {
+                font-size: 28px;
+            }
+
+            .about p {
+                font-size: 16px;
+            }
+        }
+
+        /* Media queries for mobile view */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .marquee span {
+                font-size: 14px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .social-icons img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* Style for social media logos */
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="tentang saya.html">Tentang Saya</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tugas Sekolah 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="listnama.html">List Nama Siswa</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Keahlian 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="coding.html">Coding</a>
+                <a href="jaringan.html">Jaringan</a>
+                <a href="3d design.html ">3D Design</a>
+            </div>
+        </div> 
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about">
+        <img src="himawan.jpg" alt="Foto Himawan Prihantono">
+        <h3>Tentang Saya</h3>
+        <p>
+            Selamat datang! Nama saya <strong>Himawan Prihantono</strong>, seorang pengembang web yang bersemangat dengan lebih dari <strong>2 tahun</strong> pengalaman dalam dunia pemrograman. 
+            Sejak pertama kali mengenal dunia digital, saya telah terpikat oleh kemampuan teknologi untuk menciptakan solusi yang inovatif dan memecahkan masalah nyata.
+        </p>
+        <p>
+            Saya memulai perjalanan saya dengan belajar dasar-dasar pemrograman, dan dengan cepat mengembangkan keterampilan dalam berbagai bahasa pemrograman seperti <strong>HTML, CSS, JavaScript</strong>, dan <strong>PHP</strong>. 
+            Saya juga telah bereksperimen dengan berbagai framework dan alat, seperti <strong>React</strong> dan <strong>Bootstrap</strong>, yang memungkinkan saya untuk membangun aplikasi web yang responsif dan menarik.
+        </p>
+        <p>
+            Saat ini, saya melanjutkan studi di <strong>Politeknik UNJ</strong> dalam program D4, di mana saya terus memperdalam pemahaman saya tentang pengembangan perangkat lunak, algoritma, dan struktur data. 
+            Saya percaya bahwa pendidikan formal dan pengalaman praktis saling melengkapi, sehingga saya aktif berpartisipasi dalam proyek-proyek kelompok dan hackathon untuk meningkatkan keterampilan kolaborasi dan komunikasi saya.
+        </p>
+        <p>
+            Visi saya adalah untuk menciptakan teknologi yang berdampak positif pada masyarakat. Saya berkomitmen untuk terus belajar dan beradaptasi dengan perkembangan terbaru di dunia teknologi. 
+            Selain itu, saya juga ingin berbagi pengetahuan saya dengan orang lain, karena saya percaya bahwa kolaborasi dan berbagi informasi adalah kunci untuk kemajuan bersama.
+        </p>
+        <p>
+            Di luar pemrograman, saya memiliki minat dalam <strong>desain grafis</strong> dan <strong>fotografi</strong>, yang membantu saya mengembangkan perspektif kreatif dalam proyek pengembangan web saya. 
+            Saya berharap dapat membangun jaringan dengan para profesional lain di industri ini dan bersama-sama menciptakan solusi inovatif yang membawa perubahan.
+        </p>
+    </div>
+    
+    <!-- Logo media sosial -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png" alt="Twitter Logo">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        </a>
+    </div>
+
+</body>
+</html>

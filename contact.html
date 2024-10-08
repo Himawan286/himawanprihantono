@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Himawan Prihantono</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #575757;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Contact */
+        .background-image {
+            display: flex;
+            justify-content: space-between; 
+            margin: 20px; 
+        }
+
+        .left-body, .right-body {
+            flex: 1; 
+            margin: 10px; 
+        }
+
+        .body {
+            height: auto; 
+        }
+
+
+        /* Media queries for mobile view */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .marquee span {
+                font-size: 14px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .social-icons img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* Style for social media logos */
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="tentang saya.html">Tentang Saya</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tugas Sekolah 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="listnama.html">List Nama Siswa</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Keahlian 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="coding.html">Coding</a>
+                <a href="jaringan.html">Jaringan</a>
+                <a href="3d design.html ">3D Design</a>
+            </div>
+        </div> 
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Contact -->
+    <div class="background-image" style="display: flex;">
+        <div class="left-body">
+            <div class="body" style="margin-left: 30px; padding: 30px; max-width: 100%; max-height: 100%; margin-bottom: 10px; background-color: #f2f2f2; border-radius: 10px; margin-top: 30px;">
+                <div class="body" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+                    <iframe style="box-shadow: 10px 10px 10px rgb(0,0,0,.7);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4716.75452279744!2d106.89773145290653!3d-6.223856595238608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f372cafe5df5%3A0xa8675ce9552a66a6!2sApartemen%20Casablanca%20East%20Residence!5e0!3m2!1sid!2sid!4v1709697926317!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="right-body">
+            <div class="body" style="margin: 30px; padding: 30px; max-width: 100%; max-height: 100%; margin-bottom: 10px; background-color: #f2f2f2; border-radius: 10px;">
+                <h3>Perhimpunan Pemilik dan Penghuni Satuan Rumah Susun (P3SRS)</h3>
+                <br>
+                Apartemen Casablanca
+                <br>
+                Tower 1. Ground Floor
+                <br>
+                Jl.Casablanca, Kav.12
+                <br>
+                Jakarta 12870 - Indonesia
+                <br>
+                <a href="https://www.instagram.com/theapartemencasablanca/">Instagram</a>
+                <p></p>
+                <p>
+                    Marketing Executive
+                    <br>
+                    <a href="tel:+622128548888">+(62-21) 2854 8888</a>
+                    <br>
+                    <a href="mailto:info@apartemen-casablanca.co.id">info@apartemen-casablanca.co.id</a>
+                </p>
+                <p></p>
+                <p>
+                    <a href="https://wa.me/6285692886390?text=Apartemen%20Casablanca">+(62) 856 9288 6390 Anisa</a>
+                    <br>
+                    <a href="mailto:anisa@e-samuel.com">anisa@e-samuel.com</a>
+                </p>
+                <p></p>
+                <p>
+                    <a href="https://wa.me/62818412222?text=Apartemen%20Casablanca">+(62) 818 41 2222 Ruci Mojoprasthi</a>
+                    <br>
+                    <a href="mailto:ruci@e-samuel.com">ruci@e-samuel.com</a>
+                </p>
+            </div>
+        </div>
+    </div>    
+
+    <!-- Logo media sosial -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png" alt="Twitter Logo">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        </a>
+    </div>
+
+</body>
+</html>

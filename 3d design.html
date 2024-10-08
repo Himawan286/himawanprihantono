@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Himawan Prihantono</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #575757;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Keahlian */
+        .keahlian {
+            padding: 30px;
+            background-color: #f9f9f9;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .keahlian h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .keahlian p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        .keahlian ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .keahlian li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 4px solid #007bff; /* Color for the left border */
+            transition: background-color 0.3s;
+        }
+
+        .keahlian li:hover {
+            background-color: #e7f3ff; /* Light blue background on hover */
+        }
+
+        .keahlian strong {
+            color: #007bff; /* Color for the skill titles */
+        }
+
+        /* Media queries for mobile view */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .marquee span {
+                font-size: 14px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .social-icons img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* Style for social media logos */
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="tentang saya.html">Tentang Saya</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tugas Sekolah 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="listnama.html">List Nama Siswa</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Keahlian 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="coding.html">Coding</a>
+                <a href="jaringan.html">Jaringan</a>
+                <a href="3d design.html ">3D Design</a>
+            </div>
+        </div> 
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <!-- Keahlian -->
+    <div class="keahlian">
+        <h2>Keahlian Saya dalam 3D Design</h2>
+        <p>
+            Dalam era digital saat ini, desain 3D telah menjadi salah satu keterampilan yang sangat berharga. Keahlian saya dalam desain 3D mencakup berbagai aspek, mulai dari pembuatan objek 3D hingga teknologi pencetakan 3D. Berikut adalah beberapa poin kunci dari kemampuan saya dalam bidang ini:
+        </p>
+        <ul>
+            <li><strong>Pembuatan Objek 3D</strong>: Saya memiliki pengalaman dalam menggunakan software desain 3D seperti Blender, Autodesk Maya, dan Tinkercad untuk membuat model 3D yang realistis. Saya terbiasa merancang berbagai objek, mulai dari karakter untuk animasi hingga produk untuk presentasi.</li>
+            <li><strong>Teknik Pemodelan</strong>: Saya menguasai berbagai teknik pemodelan, termasuk polygon modeling, NURBS, dan sculpting. Kemampuan ini memungkinkan saya untuk menciptakan objek dengan detail tinggi dan bentuk yang kompleks.</li>
+            <li><strong>Teknologi Pencetakan 3D</strong>: Saya memahami proses pencetakan 3D, termasuk pemilihan material yang tepat dan persiapan model untuk dicetak. Saya telah bekerja dengan printer 3D dan mengoptimalkan desain untuk hasil yang terbaik.</li>
+            <li><strong>Rendering dan Animasi</strong>: Selain pembuatan model, saya juga memiliki kemampuan dalam rendering dan animasi objek 3D. Saya menggunakan perangkat lunak seperti Blender dan Adobe After Effects untuk menciptakan visualisasi yang menarik dan dinamis.</li>
+            <li><strong>Prototyping dan Desain Produk</strong>: Keahlian saya dalam desain 3D juga mencakup pembuatan prototipe. Saya dapat mendesain produk yang tidak hanya estetis tetapi juga fungsional, mempersiapkannya untuk produksi.</li>
+            <li><strong>Kolaborasi dan Komunikasi</strong>: Saya percaya bahwa desain yang baik juga melibatkan kolaborasi yang efektif dengan klien dan tim. Saya memiliki kemampuan komunikasi yang baik untuk memahami kebutuhan klien dan menyampaikan ide-ide desain dengan jelas.</li>
+        </ul>
+        <p>
+            Dengan kombinasi keterampilan teknis dan kreativitas, saya berkomitmen untuk menciptakan desain 3D yang tidak hanya menarik tetapi juga memenuhi tujuan fungsional. Saya selalu berusaha untuk belajar dan berkembang dalam bidang ini, mengikuti perkembangan terbaru dalam teknologi desain 3D.
+        </p>
+    </div>
+    
+    <!-- Logo media sosial -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png" alt="Twitter Logo">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        </a>
+    </div>
+
+</body>
+</html>
