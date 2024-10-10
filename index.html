@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Himawan Prihantono</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar" id="myNavbar">
+        <a href="index.html">Home</a>
+        <a href="tentang saya.html">Tentang Saya</a>
+        <div class="dropdown">
+            <button class="dropbtn">Tugas Sekolah 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="listnama.html">List Nama Siswa</a>
+                <a href="#">#</a>
+                <a href="#">#</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Keahlian 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="coding.html">Coding</a>
+                <a href="jaringan.html">Jaringan</a>
+                <a href="3d design.html ">3D Design</a>
+            </div>
+        </div> 
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="carousel">
+        <div class="carousel-images">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/800x400.png?text=Image+1" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x400.png?text=Image+2" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/800x400.png?text=Image+3" alt="Image 3">
+            </div>
+        </div>
+        <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome">
+        <h1>Selamat Datang di Website Himawan Prihantono</h1>
+        <p>
+            Selamat datang di halaman resmi saya! Website ini adalah platform untuk mendokumentasikan perjalanan saya dalam dunia pemrograman. 
+            Di sini, Anda akan menemukan berbagai proyek yang telah saya kerjakan, serta artikel dan tips yang dapat membantu Anda dalam belajar pemrograman.
+        </p>
+        <p>
+            Tujuan utama dari website ini adalah untuk mendukung pengembangan diri saya. Melalui eksplorasi dan pembelajaran yang terus menerus, 
+            saya berharap dapat meningkatkan keterampilan teknis dan kreativitas dalam menciptakan solusi digital yang inovatif. 
+            Saya percaya bahwa berbagi pengetahuan dan pengalaman adalah salah satu cara terbaik untuk tumbuh dan belajar. 
+            Mari kita terhubung dan berbagi ide!
+        </p>
+        
+        <!-- Whatsapp -->
+        <div class="whatsapp-chat">
+            <a href="https://api.whatsapp.com/send?phone=6281317788928" target="_blank" class="whatsapp-chat-icon">
+                <img src="whatsapp.jpg" alt="WhatsApp Icon">
+                <span class="tooltip">Perlu bantuan? Kirim pesan via WhatsApp</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Whatsapp -->
+    <div class="whatsapp-chat">
+        <a href="https://api.whatsapp.com/send?phone=6281317788928" target="_blank" class="whatsapp-chat-icon">
+            <img src="whatsapp.jpg" alt="WhatsApp Icon">
+            <span class="tooltip">Perlu bantuan? Kirim pesan via WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Logo media sosial -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png" alt="Twitter Logo">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        </a>
+    </div>
+    <p class="copyright">&copy; 2024 ◦ Percobaan</p> <!-- Tambahkan kelas copyright di sini -->
+    <script src="script.js"></script>
+</body>
+</html>
